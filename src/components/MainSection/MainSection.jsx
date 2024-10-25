@@ -6,7 +6,13 @@ import players from '../../data/players.json';
 const MainSection = ({ choosePlayer, selectedPlayers, removePlayer }) => {
   return (
     <div className="w-11/12 mx-auto mt-8">
-      <h2 className="text-3xl font-bold mb-4">Available Players</h2>
+      <div className='flex items-center justify-between mb-8'>
+	  <h2 className="text-3xl font-bold">Available Players</h2>
+	  <div>
+		<button className='btn btn-warning rounded-r'>Available</button>
+		<button className='btn rounded-l'>Selected(0)</button>
+	  </div>
+	  </div>
       <div className="grid grid-cols-3 gap-4">
         {players.map(player => (
           <PlayerCard key={player.playerId} player={player} choosePlayer={choosePlayer} />
