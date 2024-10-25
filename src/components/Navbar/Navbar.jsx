@@ -4,19 +4,21 @@ import PropTypes from 'prop-types';
 
 const Navbar = ({ coins }) => {
   return (
-    <nav className="navbar  text-black shadow-lg">
+    <nav>
+      <div  className="navbar  text-black  w-11/12 mx-auto">
       <div className="flex-1">
 	  <img src="https://i.ibb.co/ZHypSky/logo.png" alt="" />
       </div>
       <div className='flex gap-12'>
-	  <h2>Home</h2>
- 		<h2>Fixtures</h2>
- 		<h2>Teams</h2>
- 		<h2>Schedules</h2>
-	  <div className="flex-none">
-        <span className="btn btn-outline mr-2">{coins} Coins <RiCoinsFill className="text-2xl" /></span>
+          <h2>Home</h2>
+          <h2>Fixtures</h2>
+          <h2>Teams</h2>
+          <h2>Schedules</h2>
+          <div className="flex-none">
+              <span className="btn btn-outline mr-2">{coins} Coins <RiCoinsFill className="text-2xl" /></span>
+            </div>
+          </div>
       </div>
-	  </div>
     </nav>
   );
 };
