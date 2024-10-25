@@ -1,0 +1,63 @@
+[
+	{
+	  "playerId": 1,
+	  "name": "Shakib Al Hasan",
+	  "country": "Bangladesh",
+	  "image": "https://i.ibb.co/4VYqXYC/sh.jpg",
+	  "role": "All-rounder",
+	  "biddingPrice": 500,
+	  "battingType": "Left-hand",
+	  "bowlingType": "Left-arm spin"
+	},
+	{
+	  "playerId": 2,
+	  "name": "Shakib Al Hasan",
+	  "country": "Bangladesh",
+	  "image": "https://i.ibb.co/4VYqXYC/sh.jpg",
+	  "role": "All-rounder",
+	  "biddingPrice": 500,
+	  "battingType": "Left-hand",
+	  "bowlingType": "Left-arm spin"
+	},
+	{
+	  "playerId": 3,
+	  "name": "Shakib Al Hasan",
+	  "country": "Bangladesh",
+	  "image": "https://i.ibb.co/4VYqXYC/sh.jpg",
+	  "role": "All-rounder",
+	  "biddingPrice": 500,
+	  "battingType": "Left-hand",
+	  "bowlingType": "Left-arm spin"
+	},
+	{
+	  "playerId": 4,
+	  "name": "Shakib Al Hasan",
+	  "country": "Bangladesh",
+	  "image": "https://i.ibb.co/4VYqXYC/sh.jpg",
+	  "role": "All-rounder",
+	  "biddingPrice": 500,
+	  "battingType": "Left-hand",
+	  "bowlingType": "Left-arm spin"
+	},
+	{
+	  "playerId": 5,
+	  "name": "Shakib Al Hasan",
+	  "country": "Bangladesh",
+	  "image": "https://i.ibb.co/4VYqXYC/sh.jpg",
+	  "role": "All-rounder",
+	  "biddingPrice": 500,
+	  "battingType": "Left-hand",
+	  "bowlingType": "Left-arm spin"
+	},
+	{
+	  "playerId": 6,
+	  "name": "Tamim Iqbal",
+	  "country": "Bangladesh",
+	  "image": "https://i.ibb.co/4VYqXYC/sh.jpg",
+	  "role": "Batsman",
+	  "biddingPrice": 400,
+	  "battingType": "Left-hand",
+	  "bowlingType": "None"
+	}
+  ]
+  
