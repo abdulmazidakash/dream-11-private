@@ -4,6 +4,7 @@ import Banner from './components/Banner/Banner';
 import MainSection from './components/MainSection/MainSection';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Footer from './components/Footer/Footer';
 
 const App = () => {
   const [coins, setCoins] = useState(0);
@@ -44,6 +45,7 @@ const App = () => {
       <Banner incrementCoins={incrementCoins} />
       <MainSection choosePlayer={choosePlayer} selectedPlayers={selectedPlayers} removePlayer={removePlayer} />
       <ToastContainer />
+      <Footer></Footer>
     </div>
   );
 };
