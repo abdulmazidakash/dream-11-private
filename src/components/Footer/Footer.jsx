@@ -7,7 +7,7 @@ const Footer = () => {
 		backgroundColor: 'white',
 		backgroundSize: 'cover',
 		backgroundPosition: 'center',
-		height: '384px', // Adjust height as needed
+		height: '300px', // Adjust height as needed
 		alignItems: 'center',
 		justifyContent: 'center',
 		color: 'white',
@@ -19,8 +19,8 @@ const Footer = () => {
   
    <div className="absolute -top-48 w-full ">
         {/* Newsletter Subscription Fieldset */}
-        <div className="p-4 border border-white w-2/3 mx-auto rounded-[24px] shadow-xl mb-8 justify-center items-center">
-        <div style={footerStyle} className="text-center space-y-6 pt-24">
+        <div className="p-4 border border-white w-3/4 mx-auto rounded-[24px] shadow-xl mb-8 justify-center items-center">
+        <div style={footerStyle} className="text-center space-y-6 pt-20">
           <h2 className="text-2xl text-black font-bold">Subscribe to our Newsletter</h2>
           <h4 className="text-xl text-gray-400 font-semibold">Get the latest updates and news right in your inbox!</h4>
           <div className="space-x-2">
@@ -37,7 +37,7 @@ const Footer = () => {
 
 
       {/* Main Footer Section */}
-      <main className="bg-[#07091a]  pt-60 mt-20 text-white text-center">
+      <main className="bg-[#07091a]  pt-52 mt-20 text-white text-center">
         <img
           className="mx-auto mb-4"
           src="https://i.ibb.co/CJ0fN60/logo-footer.png"

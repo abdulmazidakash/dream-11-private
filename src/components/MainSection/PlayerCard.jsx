@@ -4,15 +4,15 @@ import { CiFlag1 } from "react-icons/ci";
 
 const PlayerCard = ({ player, choosePlayer }) => {
   return (
-    <div className="border text-start rounded-lg p-4 bg-white shadow-md flex flex-col items-center">
-      <img src={player.image} alt={player.name} className="w-50 h-50 object-cover rounded-lg mb-4" />
+    <div className="border rounded-lg p-4 bg-white shadow-md flex-col items-center">
+      <img src={player.image} alt={player.name} className="w-96 h-56 object-cover rounded-lg mb-4 " />
 
-	  <div className='flex gap-2 items-center'>
+	  <div className='flex gap-2 items-center '>
 	  <FaUser />
       <h3 className="text-lg font-semibold text-left">{player.name}</h3>
 	  </div>
 
-      <div className='justify-between flex gap-4'>
+      <div className='justify-between flex gap-4 font-semibold'>
 	  <div className='flex gap-2 items-center'>
 	  	<CiFlag1 />
 	  	<p>{player.country}</p>
@@ -21,14 +21,16 @@ const PlayerCard = ({ player, choosePlayer }) => {
 	  	<button className='btn'>Role: {player.role}</button>
 	  </div>
 	  </div>
-	  <h2 className='text-start'>Rating</h2>
-	  <div className='flex justify-between gap-4'>
-	  <h2>Left-handed-bat</h2>
-	  <h2>Left-handed-bat</h2>
+
+    <hr className='mt-4 mb-4' />
+	  <h2 className='font-bold mb-2'>Rating</h2>
+	  <div className='flex justify-between gap-4 space-y-2 items-center'>
+	  <h2 className='font-semibold'>{player.battingType}</h2>
+	  <h2 className='text-gray-400 font-semibold'>{player.bowlingType}</h2>
 	  </div>
-      <div className='flex justify-between items-center gap-4'>
-	  <p>Price: {player.biddingPrice} coins</p>
-      <button onClick={() => choosePlayer(player)} className="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-400">
+      <div className='flex justify-between items-center gap-4 mt-2'>
+	  <p className='font-semibold'>Price: $ {player.biddingPrice} coins</p>
+      <button onClick={() => choosePlayer(player)} className="btn btn-outline text-black  rounded-lg ">
         Choose Player
       </button>
 	  </div>
@@ -44,6 +46,8 @@ PlayerCard.propTypes = {
     image: PropTypes.string.isRequired,
     role: PropTypes.string.isRequired,
     biddingPrice: PropTypes.number.isRequired,
+    battingType: PropTypes.string.isRequired,
+    bowlingType: PropTypes.string.isRequired
   }).isRequired,
   choosePlayer: PropTypes.func.isRequired,
 };
