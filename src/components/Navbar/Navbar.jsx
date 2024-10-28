@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 const Navbar = ({ coins }) => {
   return (
-    <nav className="sticky top-0  backdrop-blur  lg:pb-1 shadow-lg">
+    <nav className="sticky top-0  backdrop-blur  lg:pb-1 shadow-lg z-[1000]">
       <div  className="navbar  text-black  w-11/12 mx-auto">
       <div className="flex-1">
 	  <img src="https://i.ibb.co/ZHypSky/logo.png" alt="" />

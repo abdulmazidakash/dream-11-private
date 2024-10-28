@@ -1,41 +1,54 @@
 
 
 const Footer = () => {
+
+  const footerStyle = {
+		backgroundImage: "url('https://i.ibb.co/zF33ZZs/bg-shadow.png')",
+		backgroundColor: 'white',
+		backgroundSize: 'cover',
+		backgroundPosition: 'center',
+		height: '384px', // Adjust height as needed
+		alignItems: 'center',
+		justifyContent: 'center',
+		color: 'white',
+		borderRadius: '24px',
+    // padding: '20px',
+	  };
   return (
-    <footer className="relative bottom-0 w-full">
-      <div className="absolute top-0 w-full">
+    <footer className="relative bottom-0 w-full mt-52">
+  
+   <div className="absolute -top-48 w-full ">
         {/* Newsletter Subscription Fieldset */}
-        <fieldset className="md:-mt-10 md:w-2/3 mx-auto rounded-xl shadow-xl py-8 bg-gradient-to-r from-pink-200 to-orange-200 text-center">
-          <h1 className="text-xl font-bold">Subscribe to our Newsletter</h1>
-          <label className="label">
-            <span className="label-text my-2 text-black">
-              Subscribe to our newsletter for the latest updates.
-            </span>
-          </label>
-          <div className="join">
+        <div className="p-4 border border-white w-2/3 mx-auto rounded-[24px] shadow-xl mb-8 justify-center items-center">
+        <div style={footerStyle} className="text-center space-y-6 pt-24">
+          <h2 className="text-2xl text-black font-bold">Subscribe to our Newsletter</h2>
+          <h4 className="text-xl text-gray-400 font-semibold">Get the latest updates and news right in your inbox!</h4>
+          <div className="space-x-2">
             <input
               type="text"
               placeholder="Enter your email"
-              className="input input-bordered join-item"
+              className="input input-bordered w-6/12"
             />
-            <button className="btn btn-warning join-item">Subscribe</button>
+            <button className="btn btn-warning">Subscribe</button>
           </div>
-        </fieldset>
+        </div>
+        </div>
       </div>
 
+
       {/* Main Footer Section */}
-      <main className="bg-[#07091a] rounded-xl pt-60 mt-20 text-white text-center">
+      <main className="bg-[#07091a]  pt-60 mt-20 text-white text-center">
         <img
           className="mx-auto mb-4"
-          src="../../public/image/logo-footer.png"
+          src="https://i.ibb.co/CJ0fN60/logo-footer.png"
           alt="Footer Logo"
         />
 
         {/* Footer Content */}
-        <div className="footer p-10">
+        <div className="footer p-10 w-11/12 mx-auto justify-between">
           {/* Services Section */}
           <nav>
-            <h6 className="footer-title">Services</h6>
+            <h6 className="footer-title">About Us</h6>
             <p className="text-left">
               We are a passionate team dedicated to
               <br />
@@ -47,13 +60,16 @@ const Footer = () => {
           <nav>
             <h6 className="footer-title">Quick Links</h6>
             <a className="link link-hover" href="#">
-              About us
-            </a>
-            <a className="link link-hover" href="#">
-              Contact
+              Home
             </a>
             <a className="link link-hover" href="#">
               Service
+            </a>
+            <a className="link link-hover" href="#">
+              About
+            </a>
+            <a className="link link-hover" href="#">
+              Contact
             </a>
           </nav>
 
