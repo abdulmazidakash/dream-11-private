@@ -24,7 +24,7 @@ const Banner = ({ incrementCoins }) => {
           <h2 className="text-4xl font-bold text-white">Assemble Your Ultimate Dream 11 Cricket Team</h2>
           <p className="text-lg mt-2 text-white font-bold">Beyond Boundaries Beyond Limits</p>
           <div className='border w-40 mx-auto p-2 rounded-lg'>
-		  <button onClick={incrementCoins} className="btn btn-warning">
+		  <button onClick={incrementCoins} className="btn bg-[#E7FE29]">
 		  Claim Free Credit
           </button>
 		  </div>

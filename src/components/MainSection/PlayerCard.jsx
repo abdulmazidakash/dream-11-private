@@ -30,7 +30,7 @@ const PlayerCard = ({ player, choosePlayer }) => {
 	  </div>
       <div className='flex justify-between items-center gap-4 mt-2'>
 	  <p className='font-semibold'>Price: $ {player.biddingPrice} coins</p>
-      <button onClick={() => choosePlayer(player)} className="btn btn-outline text-black  rounded-lg ">
+      <button onClick={() => choosePlayer(player)} className="btn btn-outline hover:bg-[#E7FE29] text-black  rounded-lg ">
         Choose Player
       </button>
 	  </div>
